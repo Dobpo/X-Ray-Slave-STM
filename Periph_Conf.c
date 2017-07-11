@@ -63,8 +63,8 @@ void Init_ADCs_with_DMA(void){
 
 	/*Разрешить прерывание DMA по заполнению буффера*/
 	DMA_ITConfig(DMA2_Stream4, DMA_IT_TC | DMA_IT_HT, ENABLE);
-	DMA_ITConfig(DMA2_Stream2, DMA_IT_TC | DMA_IT_HT, ENABLE);
-	DMA_ITConfig(DMA2_Stream1, DMA_IT_TC | DMA_IT_HT, ENABLE);
+	//DMA_ITConfig(DMA2_Stream2, DMA_IT_TC | DMA_IT_HT, ENABLE);
+	//DMA_ITConfig(DMA2_Stream1, DMA_IT_TC | DMA_IT_HT, ENABLE);
 
 	/* ADC1 regular channel5 configuration *************************************/
 	ADC_RegularChannelConfig(ADC1, ADC_Channel_5, 1, ADC_SampleTime_3Cycles);
