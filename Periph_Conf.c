@@ -102,11 +102,11 @@ void Init_EXTI_DMA(void)
 	NVIC_InitStruct.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&NVIC_InitStruct);
 		/*DMA2_Stream2_IRQn Init ******************************************************/
-	NVIC_InitStruct.NVIC_IRQChannel = DMA2_Stream2_IRQn;
-	NVIC_Init(&NVIC_InitStruct);
+	//NVIC_InitStruct.NVIC_IRQChannel = DMA2_Stream2_IRQn;
+	//NVIC_Init(&NVIC_InitStruct);
 		/*DMA2_Stream1_IRQn Init ******************************************************/
-	NVIC_InitStruct.NVIC_IRQChannel = DMA2_Stream1_IRQn;
-	NVIC_Init(&NVIC_InitStruct);
+	//NVIC_InitStruct.NVIC_IRQChannel = DMA2_Stream1_IRQn;
+	//NVIC_Init(&NVIC_InitStruct);
 
 }
 
