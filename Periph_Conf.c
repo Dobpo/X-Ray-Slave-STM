@@ -249,3 +249,13 @@ void Send_Data_To_SPI1(uint32_t *pRAM)
 	DMA_Cmd(DMA2_Stream3, DISABLE);
 	SPI_I2S_DMACmd(SPI1, SPI_I2S_DMAReq_Tx, DISABLE);
 }
+
+/*Заполнить данными тест буф.
+ * */
+void Fill_Test_Buffers(void){
+	for(int i = 0; i<Buffer_to_Send_Lenght;i++){
+		Buffer_to_Send_TestData1[i] = 0;
+		Buffer_to_Send_TestData2[i] = 512;
+		Buffer_to_Send_TestData3[i] = 1024;
+	}
+}

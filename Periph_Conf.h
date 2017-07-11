@@ -19,6 +19,11 @@ uint16_t Buffer_to_Send_ADC1[Buffer_to_Send_Lenght];
 uint16_t Buffer_to_Send_ADC2[Buffer_to_Send_Lenght];
 uint16_t Buffer_to_Send_ADC3[Buffer_to_Send_Lenght];
 
+//Буфферы данных для тестирования для тестирования
+uint16_t Buffer_to_Send_TestData1[Buffer_to_Send_Lenght];
+uint16_t Buffer_to_Send_TestData2[Buffer_to_Send_Lenght];
+uint16_t Buffer_to_Send_TestData3[Buffer_to_Send_Lenght];
+
 //ADC
 void Init_ADCs_with_DMA(void);
 void Init_EXT_for_ADCs(void);
@@ -30,6 +35,7 @@ void Send_Data_To_SPI1(uint32_t *pRAM);
 //Test
 void Init_Leds(void);
 void Delay(uint32_t count);
+
 
 #ifdef __cplusplus
 }
