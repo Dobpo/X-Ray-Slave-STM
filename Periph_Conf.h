@@ -35,6 +35,7 @@ void Send_Data_To_SPI1(uint32_t *pRAM);
 //Test
 void Init_Leds(void);
 void Delay(uint32_t count);
+void Fill_Test_Buffers(void);
 
 
 #ifdef __cplusplus
