@@ -254,8 +254,8 @@ void Send_Data_To_SPI1(uint32_t *pRAM)
  * */
 void Fill_Test_Buffers(void){
 	for(int i = 0; i<Buffer_to_Send_Lenght;i++){
-		Buffer_to_Send_TestData1[i] = 0;
-		Buffer_to_Send_TestData2[i] = 512;
-		Buffer_to_Send_TestData3[i] = 1024;
+		Buffer_to_Send_TestData1[i] = 7;
+		Buffer_to_Send_TestData2[i] = 8;
+		Buffer_to_Send_TestData3[i] = 9;
 	}
 }
